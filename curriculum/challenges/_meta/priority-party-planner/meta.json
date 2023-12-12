@@ -19,6 +19,10 @@
     {
       "id": "6577c6373348113912c5a599",
       "title": "sort-tasks"
+    },
+    {
+      "id": "6577c6fb7352af4b2984c41b",
+      "title": "priority-party-planner-count-tasks"
     }
   ],
   "helpCategory": "JavaScript"
