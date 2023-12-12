@@ -11,6 +11,15 @@
   "superBlock": "javascript-algorithms-and-data-structures",
   "superOrder": 3,
   "isBeta": true,
-  "challengeOrder": [{ "id": "6577be30c1c4b8a7ce7c752f", "title": "Step 1" }],
+  "challengeOrder": [
+    {
+      "id": "6577be30c1c4b8a7ce7c752f",
+      "title": "Step 1"
+    },
+    {
+      "id": "6577c6373348113912c5a599",
+      "title": "sort-tasks"
+    }
+  ],
   "helpCategory": "JavaScript"
 }
