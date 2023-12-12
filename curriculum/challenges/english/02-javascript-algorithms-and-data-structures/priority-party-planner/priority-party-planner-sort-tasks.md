@@ -22,24 +22,37 @@ Example task object:
 
 # --instructions--
 
-sort-tasks instructions.
+Modify the 'planPartyTasks' function to return the tasks sorted by priority in ascending order. If two tasks have the same priority, sort them by their duration.
 
 # --hints--
 
-Test 1
+'planPartyTasks([])' should return an empty array.
 
 ```js
-
+assert(Array.isArray(planPartyTasks([])) && planPartyTasks([]).length === 0);
 ```
+
+'planPartyTasks' should return tasks sorted by priority and duration.
+
+```js
+assert.deepEqual(planPartyTasks([{ id: 'task1', priority: 2, duration: 30 }, { id: 'task2', priority: 1, duration: 20 }]), [{ id: 'task2', priority: 1, duration: 20 }, { id: 'task1', priority: 2, duration: 30 }]);
+```
+
 
 # --seed--
 
 ```js
-
+function planPartyTasks(tasks) {
+  // Write your sorting logic here
+}
+console.log(planPartyTasks([{ id: 'task1', priority: 2, duration: 30 }, { id: 'task2', priority: 1, duration: 20 }]));
 ```
 
 # --solutions--
 
 ```js
-
+function planPartyTasks(tasks) {
+  return tasks.sort((a, b) => a.priority - b.priority || a.duration - b.duration);
+}
+console.log(planPartyTasks([{ id: 'task1', priority: 2, duration: 30 }, { id: 'task2', priority: 1, duration: 20 }]));
 ```
